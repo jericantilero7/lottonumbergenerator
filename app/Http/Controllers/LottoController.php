@@ -36,7 +36,7 @@ class LottoController extends Controller
 
                 Session::flash('success', 'Generated lotto number successfully added.');
             }else{
-                Session::flash('error', 'Lotto numbers <b>' . implode(',', $request->combi). '</b> already listed from ' . $has_duplicates->created_at);
+                Session::flash('error', 'Lotto numbers <b>' . implode('-', $request->combi) . '</b> already listed from ' . $has_duplicates->created_at);
             }
 
             return redirect()->back();

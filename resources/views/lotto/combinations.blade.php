@@ -21,7 +21,7 @@
                         @foreach($generated_list as $generated)
                         <tr>
                             <td>{{ $generated->created_at }}</td>
-                            <td><b>{{ $generated->combination }}</b></td>
+                            <td><b>{{ str_replace(',', '-',  $generated->combination) }}</b></td>
                         </tr>
                         @endforeach
                    @endif
