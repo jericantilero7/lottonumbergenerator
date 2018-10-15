@@ -74,7 +74,7 @@
             no_duplicate_number();
         })
 
-        $('window').setTimeout(function() {
+        window.setTimeout(function() {
             $(".hide-alert").fadeTo(500, 0).slideUp(500, function(){
                 $('.generator').removeAttr('disabled')
                 $(this).hide(); 
